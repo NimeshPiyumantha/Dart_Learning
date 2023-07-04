@@ -19,4 +19,8 @@ void main() {
   while (year < 2016) {
     year += 1;
   }
+
+// search using arrow function
+  flybyObjects.where((name) => name.contains('us')).forEach(print);
+  flybyObjects.where((name) => name.contains('tu')).forEach(print);
 }
